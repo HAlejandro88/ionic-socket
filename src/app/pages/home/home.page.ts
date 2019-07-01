@@ -1,3 +1,4 @@
+import { WebsocketService } from './../../services/websocket.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public websocket: WebsocketService) {}
 
 }

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Chat: {{websocket.usuario.nombre}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar >
+      <ion-title> server Status:
+        <span *ngIf="websocket.socketStatus" color="success">Online</span> 
+        <span *ngIf="!websocket.socketStatus" color="danger">Offline</span> 
+      </ion-title>
+  </ion-toolbar>
+ 
+</ion-footer>
